@@ -1,0 +1,35 @@
+<h1 class="title animated jackInTheBox">{{ title }}</h1>
+
+<ul class="animated flipInX" *ngIf="mode == 'list'">
+  <p class="text-center" *ngIf="todos.length == 0"><small>Você ainda não possui tarefas!</small></p>
+  <li *ngFor="let t of todos">
+    {{ t.id }} - {{ t.todo }} -
+    <button class="btnList" (click)="markAsDone(t)" *ngIf="!t.done"><i class="far fa-check-circle"></i></button> |
+    <button class="btnList" (click)="markAsUndone(t)" *ngIf="t.done"><i class="fas fa-check-circle"></i></button>
+    <button class="btnList" (click)="remove(t)"><i class="fas fa-trash-alt"></i></button>
+  </li>
+</ul>
+
+<div id="modal" *ngIf="mode == 'add'" class="animated flipInX">
+  <h1 class="text-center">Nova Tarefa</h1>
+  <form [formGroup]="form">
+    <label for="task">Descrição: </label>
+    <input placeholder="Título da tarefa" maxlength="50" formControlName="title" type="text">
+    <small class="danger" *ngIf="form.controls.title.invalid && !form.controls.title.pristine">A descrição da tarefa deve possuir no mínimo 5 caracteres<br></small>
+    <p class="text-center">
+      <button class="btn" (click)="add()"  [disabled]="form.invalid"><i class="fas fa-save"></i> Salvar</button>
+    </p>
+  </form>
+</div>
+
+<button class="btn btn-add animated fadeInUp" (click)="changeMode('add')" *ngIf="mode == 'list'">
+  <i class="fas fa-plus-circle"></i>
+  Adicionar
+</button>
+
+<button class="btn btn-add animated fadeInUp" (click)="changeMode('list')" *ngIf="mode == 'add'">
+  <i class="fas fa-times"></i>
+  Cancelar
+</button>
+
+

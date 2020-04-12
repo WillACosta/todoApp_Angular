@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+
+body{
+    background-color: #3023AE ;
+    background: linear-gradient(60deg, #3023AE 0%, #c86dd7 100%);
+    //filter: progid: DXImageTransform.Microsoft.gradient(startColorStr='#3023AE', endCo);
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+} 
+
+.btn{
+    cursor: pointer;
+    background-color: #000;
+    padding: 20px;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 1em;
+    font-weight: 300;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.text-center{
+    text-align: center;
+}
