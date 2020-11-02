@@ -1,8 +1,12 @@
-# todoApp_Angular
-App de estudo desenvolvido com Angular 9
+<h1 align="center">Todo App Angular</h1>
+<p align-"center">
+  <img src="https://i.imgur.com/V0CRPf7.png"/>
+</p>
 
-Recursos utilizados::
+App de estudo lista de tarefas desenvolvido com Angular 9
 
- * Animate CSS
- * Font Awesome
- * Google Fonts
+## Recursos utilizados::
+
+- Animate CSS
+- Font Awesome
+- Fonte 'Dancing Script' do Google Fonts
