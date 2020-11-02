@@ -5,8 +5,8 @@
 
 App de estudo lista de tarefas desenvolvido com Angular 9
 
-## Recursos utilizados::
+## Recursos utilizados
 
 - Animate CSS
-- Font Awesome
+- Font Awesome Icons
 - Fonte 'Dancing Script' do Google Fonts
